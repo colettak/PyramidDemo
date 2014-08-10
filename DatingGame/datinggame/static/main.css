@@ -1,0 +1,270 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+vertical-align: baseline;
+background: transparent;
+font-size: 100%;
+}
+
+h1 {font-size: 1.5em; padding: 0 0 .6em 0;}
+
+.limitedwidth {
+max-width: 952px;
+margin: auto;
+min-width: 762px;
+}
+
+
+a {
+text-decoration: none;
+}
+
+a {color:#06a9de;}      /* unvisited link */
+a:visited {color:#06a9de;}  /* visited link */
+a:hover {color:#06a9de;}  /* mouse over link */
+a:active {color:#6699cc;}  /* selected link */
+
+html, body {
+margin: 0px;
+padding:0px;
+}
+body{
+background-color: #FFF;
+margin: 0px;
+padding: 0px;
+font-family: 'Nunito', sans-serif;
+}
+
+ul{
+list-style-type: none;
+}
+
+
+#searchbar {
+position: absolute;
+right: 5px;
+top: 3px;
+}
+
+
+#container {
+background-color: #FFF;
+margin: 0px;
+padding: 0px;
+}
+
+#headerwrapper{
+background: url("headbg.png");
+}
+#header{
+padding: 1em 0em;
+position: relative;
+height: 65px;
+}
+#header a{
+	color:white;
+	}
+#site-logo a{
+color: #EEE;
+font-size: 2.5em;
+}
+
+#site-logo{
+position: absolute;
+left:0px;
+top:25px;
+}
+
+#userinfo{
+position: absolute;
+right:5px;
+}
+
+
+#mainsection 
+{
+min-height: 500px;
+padding: 0 5px;
+}
+
+#primarynavwrapper{
+background: url(/static/headerbg2.png) #0f2f57 repeat-x;
+border-bottom: 2px solid #ddd;
+}
+#primarynav{
+overflow: hidden;
+text-align: center;
+height: 2em;
+position: relative;
+}
+
+#primarynav ul{
+margin-left: 171px;
+}
+
+#primarynav ul li {
+font-size: 1.1em;
+float: left;
+padding: 0;
+margin: 0;
+}
+
+.profilepic{
+	width: 160px;
+	}
+
+
+input[type="submit"], input[type="button"], button, a.linkbutton, input[type="file"]::-webkit-file-upload-button {
+-webkit-border-radius: 2px;
+-webkit-user-select: none;
+background-color: #06a9de;
+border: 1px solid #0697c6;
+border-radius: 2px;
+color: #FFF;
+cursor: pointer;
+font-size: 11px;
+font-weight: bold;
+height: 25px;
+line-height: 25px;
+margin: 0px;
+min-width: 54px;
+padding: 0 8px;
+text-align: center;
+text-transform: capitalize;
+display:inline-block;
+font-family: Arial;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, button:hover, a.linkbutton:hover{
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#31c7ec),to(#06a9de));
+	background-image:-webkit-linear-gradient(top,#31c7ec,#06a9de);
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.1);
+	background-color:#f8f8f8;
+	background-image:linear-gradient(top,#31c7ec,#06a9de);
+	background-image:-o-linear-gradient(top,#31c7ec,#06a9de);
+	border:1px solid #2266aa;
+	box-shadow:0 1px 1px rgba(0,0,0,0.1);
+	color:#FFF
+	}
+
+
+
+input[type="text"], input[type="password"], textarea{
+	background-image:url(images/form_bg.jpg);
+	background-repeat:repeat-x;
+    border: 1px solid #0697c6;
+    border-radius: 2px;
+	width: 230px;
+	color:#333333;
+	padding:3px;
+	margin-right:4px;
+	margin-bottom:8px;
+	font-family:tahoma, arial, sans-serif;
+}
+
+textarea{
+	width: 350px;
+	}
+
+label {
+	width: 180px;
+	display: inline-block;
+	color:#292929;
+	padding-right:10px;
+	vertical-align: top;
+	}
+form#deform{
+    margin: auto;
+	}
+	
+#deformsubmit{
+	margin-top:15px;
+	}
+
+ul.deformSet{
+	padding-left:190px;
+	}
+li.deformSet-item label {
+	text-align: left;
+	}
+label.desc {
+	}
+
+#primarynav ul li a {
+color: #fff;
+font-size: .9em;
+line-height: 2em;
+padding: 1em;
+margin: 0;
+border-right: 1px solid #ddd;
+}
+
+#primarynav li a:hover{
+background-color:#FFF;
+color: #333
+}
+
+
+
+
+
+#content{
+padding: 1em 1em 1em 1em;
+float:left;
+max-width:700px;
+min-width:300px;
+border-left: 1px solid #ddd;
+min-height: 550px;
+}
+
+#content.singlecolumn{
+border:none;
+	}
+
+.message{
+margin-bottom: 1em;
+border-bottom: 1px solid #ddd;
+	}
+	
+.userlabel{
+padding: 0 0 1em 0;
+width: 110px;
+color: #31669f;
+display:inline-block;
+}
+
+.traitlist, .traitlist li{
+	display:inline;
+	}
+
+.traitlist li{
+	padding: 0 1em 1em 0;
+	}
+
+#sidebar{
+float: left;
+width: 170px;
+min-height: 500px;
+padding: 1em 0;
+}
+
+#sidebar ul li{
+padding: 5px 0;
+}
+
+#sidebar ul li a{
+color: #333;
+}
+
+
+
+
+#footer{
+padding-top:2em;
+font-size: 90%;
+clear:both;
+text-align: center;
+color: #999;
+}

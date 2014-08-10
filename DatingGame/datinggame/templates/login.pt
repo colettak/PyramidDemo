@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:tal="http://xml.zope.org/namespaces/tal"
+       xmlns:metal="http://xml.zope.org/namespaces/metal"
+       metal:use-macro="main.macros['pagelayout']">
+
+<div id="content" metal:fill-slot="content">
+
+<div class="error">${message}</div>
+
+<form method="post" name="loginform" action="">
+
+            <div class="field">
+                <label for="login">Username</label>
+                <br/>
+                <input type="text" id="login" value="" name="login" alt="Log in"/>
+            </div>
+            
+            <div class="field">
+                <label for="password">Password</label>
+                <br/>
+                <input type="password" id="password" name="password" alt="Password"/>
+            </div>
+
+            <div style="display: none;" class="cookiesMessage portalMessage">
+                Cookies are not enabled. You must enable cookies before you
+                can log in.
+            </div>
+            
+            <div class="formControls">
+            
+                <input type="submit" alt="Log in" value="Log in" name="form.submitted" class="context"/>
+            </div>
+        </form>
+</div>
+
+</html>
+
+

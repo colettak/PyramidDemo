@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:tal="http://xml.zope.org/namespaces/tal"
+       xmlns:metal="http://xml.zope.org/namespaces/metal"
+       metal:use-macro="main.macros['pagelayout']">
+
+<div id="content" metal:fill-slot="content">
+<div id="messages">
+<div class="message" tal:repeat="message messages">
+<a class="username" href="/${message['user']}">${message['user']}</a>
+<p class="messagetext">${message['message']}</p>
+</div>
+</div>
+
+
+<span tal:replace="structure form"/>
+
+</div>
+
+</html>

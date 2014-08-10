@@ -1,0 +1,13 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:tal="http://xml.zope.org/namespaces/tal"
+       xmlns:metal="http://xml.zope.org/namespaces/metal"
+       metal:use-macro="main.macros['pagelayout']">
+
+<div id="content" class="singlecolumn" metal:fill-slot="content">
+  <div class='siteerror'>
+  The page you have requested was not found.
+  </div>
+  <a title="Home" href="/">Return Home</a>
+</div>
+
+</html>

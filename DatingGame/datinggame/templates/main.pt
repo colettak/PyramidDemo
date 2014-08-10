@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+
+      metal:define-macro='pagelayout'>
+<head>
+<title>Game|Set|Match</title>
+<link rel="stylesheet" href="${request.static_url('datinggame:static/main.css')}" type="text/css" media="screen" charset="utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id='container'>
+
+<div id=headerwrapper>
+<div id="header" class="limitedwidth">
+<div id="site-logo"><a id="logo" title="Home" accesskey="1" href="/">
+   Game|Set|Match</a>
+</div>
+<div id="userinfo">
+<span tal:condition="logged_in">
+   <a href="${request.application_url}/logout">Logout</a>
+</span>
+<a tal:condition="not:logged_in" title="Login" accesskey="2" href="/login">Log in</a>
+</div>
+</div>
+</div>
+
+<div id='primarynavwrapper'>
+<div id='primarynav'  class="limitedwidth">
+<ul>
+<li><a href="/">User Hub</a></li>
+<li><a href="/challenges">Challenges</a></li>
+<li><a href="/prizes">Prizes</a></li>
+</ul>
+<form id="searchbar" action="/search">
+<div class="searchBox">
+<input name="SearchableText" type="text" size="18" title="Search" accesskey="4" class="inputLabel inputLabelActive" id="">
+
+<input class="searchButton" type="submit" value="Search">
+
+</div>
+</form>
+</div>
+</div>
+
+<div id='mainsection' class='limitedwidth'>
+<div id='sidebar' tal:condition="actions">
+<div id='preactions' metal:define-slot="preactions" ></div>
+<ul>
+<li tal:repeat="action actions"><a href="${action['url']}">${action['text']}</a></li>
+</ul>
+</div>
+
+<div id='content' metal:define-slot="content"> blah blah blah </div>
+</div>
+
+
+<div id='footer' class='limitedwidth'> This is a footer</div>
+<div>
+</body>
+</html> 

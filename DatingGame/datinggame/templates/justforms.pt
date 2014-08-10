@@ -1,0 +1,14 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:tal="http://xml.zope.org/namespaces/tal"
+       xmlns:metal="http://xml.zope.org/namespaces/metal"
+       metal:use-macro="main.macros['pagelayout']">
+
+<div id="content" metal:fill-slot="content">
+
+<span tal:replace="structure form"/>
+
+</div>
+
+</html>
+
+

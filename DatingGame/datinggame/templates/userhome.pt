@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:tal="http://xml.zope.org/namespaces/tal"
+       xmlns:metal="http://xml.zope.org/namespaces/metal"
+       metal:use-macro="main.macros['pagelayout']">
+
+
+<div id="preactions" metal:fill-slot="preactions">
+<img class="profilepic" src="${pic_url}" alt="Profile picture" />
+</div>
+
+
+
+<div id="content" metal:fill-slot="content">
+
+<h1> ${username} </h1>
+
+<table id="userprofile">
+<tr>
+<td><span class="userlabel">Name:</span></td>
+<td> ${firstname} ${lastname}</td>
+</tr>
+<tr>
+<td><span class="userlabel">Gender:</span></td>
+<td> ${gender}</td>
+</tr>
+<tr>
+<td><span class="userlabel">Interested in:</span></td>
+<td> 
+<ul>
+<li tal:repeat="interest interestedin">${interest}</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><span class="userlabel">Looking for:</span></td>
+<td> 
+<ul>
+<li tal:repeat="lf lookingfor">${lf}</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><span class="userlabel">Traits:</span></td>
+<td>
+<ul class="traitlist">
+<li tal:repeat="trait traits">${trait} </li>
+</ul> 
+</td>
+</tr>
+<tr>
+<td><span class="userlabel">Likes:</span></td>
+<td>
+<ul class="traitlist">
+<li tal:repeat="like likes">${like} </li>
+</ul> 
+</td>
+</tr>
+<tr>
+<td><span class="userlabel">Bio:</span></td>
+<td> ${aboutme}</td>
+</tr>
+
+</table>
+
+
+</div>
+
+
+
+
+
+</html>
